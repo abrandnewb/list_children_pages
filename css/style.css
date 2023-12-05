@@ -1,0 +1,52 @@
+.lcp-container ul {
+    list-style-type: disclosure-closed;
+}
+.lcp-container h4 {
+    margin-bottom: 0;
+}
+.lcp-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lcp-card {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+}
+.lcp-card img {
+    width: 100%;
+    height: 270px;
+}
+.lcp-card h4 {
+    margin: 0px;
+}
+/* Small devices (640px and up) */
+@media only screen and (min-width: 40em) {
+    .lcp-card {
+        width: 100%;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 48em) {
+    .lcp-card {
+        width: 40%;
+    }
+}
+
+/* Large devices laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+    .lcp-card {
+        width: 40%;
+    }
+}
+
+/* Largest devices desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+    .lcp-card {
+        width: 30%;
+    }
+}
