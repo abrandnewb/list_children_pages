@@ -5,25 +5,14 @@ function lcp_card_view($children, $excluded_pages, $title) {
     $output .= '<div class="lcp-card-container">';
 
     foreach($children as $child) {
-        if($excluded_pages) {
-            if(!in_array($child->ID, $excluded_pages) ) {
-                $output .= '<div class="lcp-card">
-                                <img src="'.get_the_post_thumbnail_url($child->ID).'">
-                                    <a href="'.$child->guid.'">
-                                        <h5>'.$child->post_title.'</h5>
-                                    </a>
-                                <p>'.$child->post_excerpt.'</p>
-                            </div>';
-            }
-        }
-        else {
+        if(!in_array($child->ID, $excluded_pages) ) {
             $output .= '<div class="lcp-card">
-                                <img src="'.get_the_post_thumbnail_url($child->ID).'">
-                                    <a href="'.$child->guid.'">
-                                        <h5>'.$child->post_title.'</h5>
-                                    </a>
-                                <p>'.$child->post_excerpt.'</p>
-                            </div>';
+                            <img src="'.get_the_post_thumbnail_url($child->ID).'">
+                                <a href="'.$child->guid.'">
+                                    <h5>'.$child->post_title.'</h5>
+                                </a>
+                            <p>'.$child->post_excerpt.'</p>
+                        </div>';
         }
     }
 

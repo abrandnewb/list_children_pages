@@ -18,7 +18,7 @@ function add_style() {
 add_action('wp_enqueue_scripts', 'add_style');
 
 function list_children_pages_content($attributes) {
-    $excluded_pages = null;
+    $excluded_pages = [];
     $output = '';
     $children = get_children([
         'post_type' => 'page',

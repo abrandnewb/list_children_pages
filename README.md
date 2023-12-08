@@ -3,6 +3,7 @@ A WordPress plugin to list children pages or posts where ever needed via a shotc
 
 ### Short code 
 [list_children_pages title="My Children Pages(list view)" type="list" excluded_pages="43"]
+
 [list_children_pages title="My Children Pages(card view)" type="card" excluded_pages="43"]
 
 ### Screenshot

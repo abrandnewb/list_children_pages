@@ -5,12 +5,7 @@ function lcp_list_view($children, $excluded_pages, $title) {
     $output .= '<ul>';
 
     foreach($children as $child) {
-        if($excluded_pages) {
-            if(!in_array($child->ID, $excluded_pages) ) {
-                $output .= '<li><a href="'.$child->guid.'">'.$child->post_title.'</a></li>';
-            }
-        }
-        else {
+        if(!in_array($child->ID, $excluded_pages) ) {
             $output .= '<li><a href="'.$child->guid.'">'.$child->post_title.'</a></li>';
         }
     }
