@@ -8,7 +8,7 @@ A WordPress plugin to list children pages or posts where ever needed via a shotc
 
 ### Screenshot
 #### list view
-![](screenshot/list-view.jpg)
+![](/screenshot/list-view.png)
 
 #### card view
-![](screenshot/card-view.jpg)
+![](/screenshot/card-view.png)
